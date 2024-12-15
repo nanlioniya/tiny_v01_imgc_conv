@@ -1,2 +1,2 @@
 # tiny_v01_imgc_conv
-software optimation for tiny_v01_imgc model
+software optimization for tiny_v01_imgc model
