@@ -51,6 +51,11 @@ ConvPerChannel(const ConvParams &params, const int32_t *output_multiplier,
 	const int filter_width = filter_shape.Dims(2);
 	const int filter_input_depth = filter_shape.Dims(3);
 
+	// 1.44x, acc drops 0.05
+	// int8_t im2col[576][1024];
+	// int8_t kernel[1024][64];
+	// int32_t matmul[1024][64] = {0};
+
 	int8_t im2col[576][1024] = {0};
 	int8_t kernel[1024][64] = {0};
 	int32_t matmul[1024][64] = {0};
